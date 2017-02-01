@@ -65,7 +65,8 @@ if __name__ == '__main__':
         mode = string.lower(sys.argv[1])
         if mode not in ['dec','oct','hex']:
             print __doc__
-
+        else:
+            run(mode)
     elif len(sys.argv) == 1:
         mode = 'dec'
         run(mode)
